@@ -28,7 +28,7 @@ SET time_zone = "+00:00";
 -- Cấu trúc bảng cho bảng `admin`
 --
 
-drop database demowebsite;
+-- drop database demowebsite;
 create database demowebsite;
 use demowebsite;
 

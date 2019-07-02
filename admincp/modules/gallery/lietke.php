@@ -21,7 +21,7 @@
     <td><img src="modules/quanlysanpham/uploads/<?php echo $dong['hinhanh'] ?>" width="150" height="150"></td>
     <td>
     <?php
-	$sql_gal=mysqli_query("select hinhanhsp from gallery where id_sp='$_GET[id]'");
+	$sql_gal=mysqli_query($conn,"select hinhanhsp from gallery where id_sp='$_GET[id]'");
 	$count=mysqli_num_rows($sql_gal);
 	if($count>0){
 	while($dong_gal=mysqli_fetch_array($sql_gal)){
